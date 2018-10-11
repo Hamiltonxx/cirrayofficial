@@ -1,0 +1,302 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'PingFangSC-Light', 'PingFang SC Light', 'PingFang SC';
+    font-weight: 200;
+    font-style: normal;
+}
+.lfont{
+	font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+}
+#header{
+	height: 512px;
+	background-image: url('../image/banner.jpg');
+	position: relative;
+
+}
+.headercenter{
+	height: 170px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top: -85px;
+	margin-left: -35%;
+	background-color: rgba(153, 153, 153, 0.219607843137255);
+}
+.headercenter p{
+	 font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 170px;
+}
+#navbar{
+	width: 100%;
+	height: 110px;
+	background-color: rgba(0, 0, 0, 0.898039215686275);
+	padding: 20px;
+    font-size: 18px;
+    color: #FFFFFF!important;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+.img{
+	display: inline-block;
+	width: 59px;
+	height: 59px;
+}
+#navbar .active a{
+	color: #ff0000;
+}
+.active{
+	border-bottom: 2px solid #ff0000;
+	
+}
+#navbar li{
+	float: left;
+	width: 100px;
+	height: 54px;
+	padding: 10px;
+	margin:0 25px;
+	text-align: center;
+}
+#navbar li a{
+	color: #FFFFFF;
+
+}
+#service{
+	height: 780px;
+	background-color: rgba(242, 242, 242, 1);
+	margin: 10px 0;
+}
+#service .weservice{
+	height: 365px;
+	padding: 60px 80px;
+	background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    top: -100px;
+}
+#service .weservice >p{
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+.develop .left ,.develop .right{
+	text-align: center;
+}
+.develop .left p:nth-child(2),.develop .right p:nth-child(2){
+	
+	font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.develop .left p:nth-child(3),.develop .right p:nth-child(3){
+	font-size: 14px;
+}
+#service>p{
+	font-weight: 500;
+    font-style: normal;
+    font-size: 28px;
+    text-align: center;
+}
+
+.procedure{
+	margin-top: 50px;
+}
+.procedure li{
+	margin-left: 10px!important;
+	text-align: center;
+}
+.procedure li p:nth-child(2){
+	font-size: 18px;
+	margin: 10px 0;
+}
+.procedure li img{
+	width: 91px;
+	height: 91px;
+}
+.procedure li p:nth-child(3){
+	font-size: 14px;
+}
+#change{
+	height: 524px;
+	background-color: rgba(242, 242, 242, 1);
+	margin: 10px 0;
+	padding-top: 80px;
+}
+#change>p{
+	font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#change ul {
+
+}
+.mycontainer{
+	width: 90%;
+}
+#change li:not(:first-child){
+	margin-left: 50px;
+	height: 300px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 1);
+	
+}
+#change li p:first-child{
+	 font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 80px;
+}
+#change li p:nth-child(2){
+		 font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+   
+}
+#demon{
+	height: 466px;
+	background-color: rgba(242, 242, 242, 1);
+	margin: 10px 0;
+	padding-top: 50px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#demon p{
+	margin-bottom: 30px;
+}
+#demon ul li {
+	margin: 0;
+	position: relative;
+
+}
+#demon ul li img{
+	width: 80%;
+	height: 230px;
+}
+#demon ul .left{
+	margin-right: 80px;
+}
+#demon ul .left,#demon ul .right{
+	margin-top: 65px;
+}
+#demon ul .left img,#demon ul .right img{
+	width: 90px;
+	height: 90px;
+}
+#demon>ul li p{
+	position: absolute;
+	left:50%;
+	top: 50%;
+	margin-left: -100px;
+	margin-top: -30px;
+	font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color:rgba(0, 0, 0, 1) ;
+    text-align: center;
+   
+}
+#demon .more li p{
+	font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+    height: 50px;
+    margin: 0!important;
+    left: 0;
+    width: 80%;
+}
+#about{
+	height: 900px;
+	background-color: rgba(242, 242, 242, 1);
+	margin: 10px 0;
+	padding: 50px 0 0 120px;
+}
+#about> p{
+	margin-bottom: 40px;
+}
+#about ul li{
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+#about ul li div{
+	margin-right: 40px;
+
+}
+#about ul li img{
+	width: 300px;height: 180px;
+}
+#about ul li div p:nth-child(1){
+	font-weight: 500;
+    font-size: 18px;
+}
+#about ul li:nth-child(3) div:nth-child(3){
+	
+}
+#about ul li div:nth-child(3) img{
+	width: 174px;	
+	height: 174px;
+}
+#mobile{
+	height: 288px;
+	background-color: rgba(242, 242, 242, 1);
+	margin: 10px 0;
+	padding: 50px 180px;
+}
+#mobile p{
+	margin-bottom: 50px;
+}
+#mobile input:nth-child(1){
+	
+	height: 60px;
+	border: 1px solid #fff;
+	
+}
+#mobile input:nth-child(3){
+	
+	height: 50px;
+	background-color: red;
+	border: 0;
+}
+input::-webkit-input-placeholder {
+ 	text-align: center;
+ 	font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+#mobile .tip{
+	margin-left: 38%;
+	color: rgb(255, 0, 0);
+	font-weight: 400;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.unvisible {
+	display: none;
+}
+.call{
+	width: 100px;
+	height: 200px;
+	background-color: black;
+}
+#footer{
+	height: 110px;
+	background-color: rgba(0, 0, 0, 0.898039215686275);
+}
+#footer p{
+	 font-weight: 200;
+    font-style: normal;
+    color: #999999;
+    text-align: center;
+    font-size: 14px;
+    line-height: 110px;
+}
