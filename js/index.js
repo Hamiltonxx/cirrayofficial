@@ -8,41 +8,39 @@ $(function () {
 			$('.tip').removeClass('unvisible');
 		}
 		else{
-			console.log(1)
-			$('.tip').addClass('unvisible');
 			 $('.modal').modal('open');
+			$('.tip').addClass('unvisible');
+			 
+			 
 		}	
 	})
-
+	
 	$('#scroll li').click(function () {
-			for(let i = 0;i<$('#scroll li').length;i++){
-				$('#scroll li')[i].classList.remove("active");
-			}
+			
 			if(this.className =="aa"){
-				this.classList.add("active");
 				$('html, body').animate({
             scrollTop: $("#header").offset().top
         }, 1000);
 
 			}	
 		else	if(this.className =="ser"){
-				this.classList.add("active");
+				
 				$('html, body').animate({
-            scrollTop: $("#service").offset().top
+            scrollTop: $("#service").offset().top+20
         }, 1000);
 
 			}
 				else	if(this.className =="dem"){
-				this.classList.add("active");
+				
 				$('html, body').animate({
-            scrollTop: $("#demon").offset().top
+            scrollTop: $("#demon").offset().top-80
         }, 1000);
 
 			}
 			else	if(this.className =="about"){
-				this.classList.add("active");
+				
 				$('html, body').animate({
-            scrollTop: $("#about").offset().top
+            scrollTop: $("#about").offset().top-80
         }, 1000);
 
 			}
@@ -56,5 +54,35 @@ $(function () {
 			
 		  
 	})
+	$(window).scroll(function(){var a=$(this).scrollTop()
+	
+			if(a>$("#header").offset().top&&a<$("#service").offset().top){
+				for(let i = 0;i<$('#scroll li').length;i++){
+				$('#scroll li')[i].classList.remove("active");
+			}
+				$('.aa').addClass('active')
+			}
+			if(a>$("#service").offset().top&&a<$("#demon").offset().top-200){
+				for(let i = 0;i<$('#scroll li').length;i++){
+				$('#scroll li')[i].classList.remove("active");
+			}
+				$('.ser').addClass('active')
+				
+			}
+			else	if(a>$("#demon").offset().top-200&&a<$("#about").offset().top-200){
+					for(let i = 0;i<$('#scroll li').length;i++){
+				$('#scroll li')[i].classList.remove("active");
+			}
+				$('.dem').addClass('active')
+			}
+			else	if(a>$("#about").offset().top-200&&a<$("#mobile").offset().top){
+					for(let i = 0;i<$('#scroll li').length;i++){
+				$('#scroll li')[i].classList.remove("active");
+			}
+				$('.about').addClass('active')
+			}
+			
+	});
+	 $('.parallax').parallax();
 
 })
