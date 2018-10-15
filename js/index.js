@@ -8,7 +8,7 @@ $(function () {
 			$('.tip').removeClass('unvisible');
 		}
 		else{
-			 $('.modal').modal('open');
+			  M.toast({html: '已收到，客服将尽快给您回电！'})
 			$('.tip').addClass('unvisible');
 			 
 			 
